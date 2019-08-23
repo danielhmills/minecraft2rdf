@@ -1,0 +1,567 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+<#Wooden-Plank> a schema:Item ;
+	schema:name "Wooden Plank" .
+
+<#Stick> a schema:Item ;
+	schema:name "Stick" .
+
+<#Torch> a schema:Item ;
+	schema:name "Torch" .
+
+<#Crafting-Table> a schema:Item ;
+	schema:name "Crafting Table" .
+
+<#Furnace> a schema:Item ;
+	schema:name "Furnace" .
+
+<#Chest> a schema:Item ;
+	schema:name "Chest" .
+
+<#Wood-Pickaxe> a schema:Item ;
+	schema:name "Wood Pickaxe" .
+
+<#Stone-Pickaxe> a schema:Item ;
+	schema:name "Stone Pickaxe" .
+
+<#Iron-Pickaxe> a schema:Item ;
+	schema:name "Iron Pickaxe" .
+
+<#Gold-Pickaxe> a schema:Item ;
+	schema:name "Gold Pickaxe" .
+
+<#Diamond-Pickaxe> a schema:Item ;
+	schema:name "Diamond Pickaxe" .
+
+<#Wood-Shovel> a schema:Item ;
+	schema:name "Wood Shovel" .
+
+<#Stone-Shovel> a schema:Item ;
+	schema:name "Stone Shovel" .
+
+<#Iron-Shovel> a schema:Item ;
+	schema:name "Iron Shovel" .
+
+<#Gold-Shovel> a schema:Item ;
+	schema:name "Gold Shovel" .
+
+<#Diamond-Shovel> a schema:Item ;
+	schema:name "Diamond Shovel" .
+
+<#Wood-Axe> a schema:Item ;
+	schema:name "Wood Axe" .
+
+<#Stone-Axe> a schema:Item ;
+	schema:name "Stone Axe" .
+
+<#Iron-Axe> a schema:Item ;
+	schema:name "Iron Axe" .
+
+<#Gold-Axe> a schema:Item ;
+	schema:name "Gold Axe" .
+
+<#Diamond-Axe> a schema:Item ;
+	schema:name "Diamond Axe" .
+
+<#Wood-Hoe> a schema:Item ;
+	schema:name "Wood Hoe" .
+
+<#Stone-Hoe> a schema:Item ;
+	schema:name "Stone Hoe" .
+
+<#Iron-Hoe> a schema:Item ;
+	schema:name "Iron Hoe" .
+
+<#Gold-Hoe> a schema:Item ;
+	schema:name "Gold Hoe" .
+
+<#Diamond-Hoe> a schema:Item ;
+	schema:name "Diamond Hoe" .
+
+<#Bucket> a schema:Item ;
+	schema:name "Bucket" .
+
+<#Flint-and-Steel> a schema:Item ;
+	schema:name "Flint and Steel" .
+
+<#Fire-Charge> a schema:Item ;
+	schema:name "Fire Charge" .
+
+<#Fishing-Rod> a schema:Item ;
+	schema:name "Fishing Rod" .
+
+<#Carrot-on-a-Stick> a schema:Item ;
+	schema:name "Carrot on a Stick" .
+
+<#Compass> a schema:Item ;
+	schema:name "Compass" .
+
+<#Clock> a schema:Item ;
+	schema:name "Clock" .
+
+<#Map> a schema:Item ;
+	schema:name "Map" .
+
+<#Shear> a schema:Item ;
+	schema:name "Shear" .
+
+<#Wood-Sword> a schema:Item ;
+	schema:name "Wood Sword" .
+
+<#Stone-Sword> a schema:Item ;
+	schema:name "Stone Sword" .
+
+<#Iron-Sword> a schema:Item ;
+	schema:name "Iron Sword" .
+
+<#Gold-Sword> a schema:Item ;
+	schema:name "Gold Sword" .
+
+<#Diamond-Sword> a schema:Item ;
+	schema:name "Diamond Sword" .
+
+<#Bow> a schema:Item ;
+	schema:name "Bow" .
+
+<#Arrow> a schema:Item ;
+	schema:name "Arrow" .
+
+<#Leather-Helmet> a schema:Item ;
+	schema:name "Leather Helmet" .
+
+<#Iron-Helmet> a schema:Item ;
+	schema:name "Iron Helmet" .
+
+<#Gold-Helmet> a schema:Item ;
+	schema:name "Gold Helmet" .
+
+<#Diamond-Helmet> a schema:Item ;
+	schema:name "Diamond Helmet" .
+
+<#Leather-Chestplate> a schema:Item ;
+	schema:name "Leather Chestplate" .
+
+<#Iron-Chestplate> a schema:Item ;
+	schema:name "Iron Chestplate" .
+
+<#Gold-Chestplate> a schema:Item ;
+	schema:name "Gold Chestplate" .
+
+<#Diamond-Chestplate> a schema:Item ;
+	schema:name "Diamond Chestplate" .
+
+<#Leather-Legging> a schema:Item ;
+	schema:name "Leather Legging" .
+
+<#Iron-Legging> a schema:Item ;
+	schema:name "Iron Legging" .
+
+<#Gold-Legging> a schema:Item ;
+	schema:name "Gold Legging" .
+
+<#Diamond-Legging> a schema:Item ;
+	schema:name "Diamond Legging" .
+
+<#Leather-Boot> a schema:Item ;
+	schema:name "Leather Boot" .
+
+<#Iron-Boot> a schema:Item ;
+	schema:name "Iron Boot" .
+
+<#Gold-Boot> a schema:Item ;
+	schema:name "Gold Boot" .
+
+<#Diamond-Boot> a schema:Item ;
+	schema:name "Diamond Boot" .
+
+<#Iron-Block> a schema:Item ;
+	schema:name "Iron Block" .
+
+<#Gold-Block> a schema:Item ;
+	schema:name "Gold Block" .
+
+<#Diamond-Block> a schema:Item ;
+	schema:name "Diamond Block" .
+
+<#Emerald-Block> a schema:Item ;
+	schema:name "Emerald Block" .
+
+<#Lapis-Lazuli-block> a schema:Item ;
+	schema:name "Lapis Lazuli block" .
+
+<#Glowstone> a schema:Item ;
+	schema:name "Glowstone" .
+
+<#Clay-Block> a schema:Item ;
+	schema:name "Clay Block" .
+
+<#Brick> a schema:Item ;
+	schema:name "Brick" .
+
+<#Stone-Brick> a schema:Item ;
+	schema:name "Stone Brick" .
+
+<#Sandstone> a schema:Item ;
+	schema:name "Sandstone" .
+
+<#Smooth-Sandstone> a schema:Item ;
+	schema:name "Smooth Sandstone" .
+
+<#Decorative-Sandstone> a schema:Item ;
+	schema:name "Decorative Sandstone" .
+
+<#Snow-Block> a schema:Item ;
+	schema:name "Snow Block" .
+
+<#Wool-Block> a schema:Item ;
+	schema:name "Wool Block" .
+
+<#Wooden-Slab> a schema:Item ;
+	schema:name "Wooden Slab" .
+
+<#Stone-Slab> a schema:Item ;
+	schema:name "Stone Slab" .
+
+<#Sandstone-Slab> a schema:Item ;
+	schema:name "Sandstone Slab" .
+
+<#Stone-Brick-Slab> a schema:Item ;
+	schema:name "Stone Brick Slab" .
+
+<#Brick-Slab> a schema:Item ;
+	schema:name "Brick Slab" .
+
+<#Cobblestone-Slab> a schema:Item ;
+	schema:name "Cobblestone Slab" .
+
+<#Wood-Stair> a schema:Item ;
+	schema:name "Wood Stair" .
+
+<#Cobblestone-Stair> a schema:Item ;
+	schema:name "Cobblestone Stair" .
+
+<#Wood-Door> a schema:Item ;
+	schema:name "Wood Door" .
+
+<#Iron-Door> a schema:Item ;
+	schema:name "Iron Door" .
+
+<#Trapdoor> a schema:Item ;
+	schema:name "Trapdoor" .
+
+<#Ladder> a schema:Item ;
+	schema:name "Ladder" .
+
+<#Fence> a schema:Item ;
+	schema:name "Fence" .
+
+<#Fence-Gate> a schema:Item ;
+	schema:name "Fence Gate" .
+
+<#Nether-Brick-Fence> a schema:Item ;
+	schema:name "Nether Brick Fence" .
+
+<#Cobblestone-Wall> a schema:Item ;
+	schema:name "Cobblestone Wall" .
+
+<#Mossy-Cobblestone-Wall> a schema:Item ;
+	schema:name "Mossy Cobblestone Wall" .
+
+<#Iron-Bar> a schema:Item ;
+	schema:name "Iron Bar" .
+
+<#Glass-Pane> a schema:Item ;
+	schema:name "Glass Pane" .
+
+<#Bread> a schema:Item ;
+	schema:name "Bread" .
+
+<#Mushroom-Stew> a schema:Item ;
+	schema:name "Mushroom Stew" .
+
+<#Cake> a schema:Item ;
+	schema:name "Cake" .
+
+<#Cookie> a schema:Item ;
+	schema:name "Cookie" .
+
+<#Pumpkin-Pie> a schema:Item ;
+	schema:name "Pumpkin Pie" .
+
+<#Golden-Carrot> a schema:Item ;
+	schema:name "Golden Carrot" .
+
+<#Golden-Apple> a schema:Item ;
+	schema:name "Golden Apple" .
+
+<#Enchanted-Golden-Apple> a schema:Item ;
+	schema:name "Enchanted Golden Apple" .
+
+<#Melon> a schema:Item ;
+	schema:name "Melon" .
+
+<#Paper> a schema:Item ;
+	schema:name "Paper" .
+
+<#Book> a schema:Item ;
+	schema:name "Book" .
+
+<#Book-and-Quill> a schema:Item ;
+	schema:name "Book and Quill" .
+
+<#Sign> a schema:Item ;
+	schema:name "Sign" .
+
+<#Painting> a schema:Item ;
+	schema:name "Painting" .
+
+<#Item-Frame> a schema:Item ;
+	schema:name "Item Frame" .
+
+<#Flower-Pot> a schema:Item ;
+	schema:name "Flower Pot" .
+
+<#Bowl> a schema:Item ;
+	schema:name "Bowl" .
+
+<#Sugar> a schema:Item ;
+	schema:name "Sugar" .
+
+<#Pumpkin-Seed> a schema:Item ;
+	schema:name "Pumpkin Seed" .
+
+<#Melon-Seed> a schema:Item ;
+	schema:name "Melon Seed" .
+
+<#Glistening-Melon> a schema:Item ;
+	schema:name "Glistening Melon" .
+
+<#Gold-Ingot> a schema:Item ;
+	schema:name "Gold Ingot" .
+
+<#Bed> a schema:Item ;
+	schema:name "Bed" .
+
+<#Beacon> a schema:Item ;
+	schema:name "Beacon" .
+
+<#Cauldron> a schema:Item ;
+	schema:name "Cauldron" .
+
+<#Enchantment-Table> a schema:Item ;
+	schema:name "Enchantment Table" .
+
+<#Ender-Chest> a schema:Item ;
+	schema:name "Ender Chest" .
+
+<#Anvil> a schema:Item ;
+	schema:name "Anvil" .
+
+<#Blaze-Powder> a schema:Item ;
+	schema:name "Blaze Powder" .
+
+<#Brewing-Stand> a schema:Item ;
+	schema:name "Brewing Stand" .
+
+<#Eye-of-Ender> a schema:Item ;
+	schema:name "Eye of Ender" .
+
+<#Fermented-Spider-Eye> a schema:Item ;
+	schema:name "Fermented Spider Eye" .
+
+<#Bottle> a schema:Item ;
+	schema:name "Bottle" .
+
+<#Magma-Cream> a schema:Item ;
+	schema:name "Magma Cream" .
+
+<#Wood> a schema:Item ;
+	schema:name "Wood" .
+
+<#Coal> a schema:Item ;
+	schema:name "Coal" .
+
+<#Cobblestone> a schema:Item ;
+	schema:name "Cobblestone" .
+
+<#Stone-Block> a schema:Item ;
+	schema:name "Stone Block" .
+
+<#Iron-Ingot> a schema:Item ;
+	schema:name "Iron Ingot" .
+
+<#Diamond> a schema:Item ;
+	schema:name "Diamond" .
+
+<#Flint> a schema:Item ;
+	schema:name "Flint" .
+
+<#Gunpowder> a schema:Item ;
+	schema:name "Gunpowder" .
+
+<#String> a schema:Item ;
+	schema:name "String" .
+
+<#Carrot> a schema:Item ;
+	schema:name "Carrot" .
+
+<#Redstone-Dust> a schema:Item ;
+	schema:name "Redstone Dust" .
+
+<#Feather> a schema:Item ;
+	schema:name "Feather" .
+
+<#Leather> a schema:Item ;
+	schema:name "Leather" .
+
+<#Emerald> a schema:Item ;
+	schema:name "Emerald" .
+
+<#Lapis-Lazuli> a schema:Item ;
+	schema:name "Lapis Lazuli" .
+
+<#Glowstone-Dust> a schema:Item ;
+	schema:name "Glowstone Dust" .
+
+<#Clay-Ball> a schema:Item ;
+	schema:name "Clay Ball" .
+
+<#Clay-Brick> a schema:Item ;
+	schema:name "Clay Brick" .
+
+<#Sand> a schema:Item ;
+	schema:name "Sand" .
+
+<#Snowball> a schema:Item ;
+	schema:name "Snowball" .
+
+<#Stone> a schema:Item ;
+	schema:name "Stone" .
+
+<#Nether-Brick> a schema:Item ;
+	schema:name "Nether Brick" .
+
+<#Mossy-Cobblestone> a schema:Item ;
+	schema:name "Mossy Cobblestone" .
+
+<#Glass> a schema:Item ;
+	schema:name "Glass" .
+
+<#Wheat> a schema:Item ;
+	schema:name "Wheat" .
+
+<#Red-Mushroom> a schema:Item ;
+	schema:name "Red Mushroom" .
+
+<#Brown-Mushroom> a schema:Item ;
+	schema:name "Brown Mushroom" .
+
+<#Milk> a schema:Item ;
+	schema:name "Milk" .
+
+<#Egg> a schema:Item ;
+	schema:name "Egg" .
+
+<#Cocoa-Bean> a schema:Item ;
+	schema:name "Cocoa Bean" .
+
+<#Pumpkin> a schema:Item ;
+	schema:name "Pumpkin" .
+
+<#Gold-Nugget> a schema:Item ;
+	schema:name "Gold Nugget" .
+
+<#Apple> a schema:Item ;
+	schema:name "Apple" .
+
+<#Melon-Slice> a schema:Item ;
+	schema:name "Melon Slice" .
+
+<#Sugar-Cane> a schema:Item ;
+	schema:name "Sugar Cane" .
+
+<#Ink-Sac> a schema:Item ;
+	schema:name "Ink Sac" .
+
+<#Wool> a schema:Item ;
+	schema:name "Wool" .
+
+<#Nether-Star> a schema:Item ;
+	schema:name "Nether Star" .
+
+<#Obsidian> a schema:Item ;
+	schema:name "Obsidian" .
+
+<#Eye-Of-Ender> a schema:Item ;
+	schema:name "Eye Of Ender" .
+
+<#Blaze-Rod> a schema:Item ;
+	schema:name "Blaze Rod" .
+
+<#Ender-Pearl> a schema:Item ;
+	schema:name "Ender Pearl" .
+
+<#Spider-Eye> a schema:Item ;
+	schema:name "Spider Eye" .
+
+<#Slime-Ball> a schema:Item ;
+	schema:name "Slime Ball" .
+
+<#Cooked-Chicken> a schema:Item ;
+	schema:name "Cooked Chicken" .
+
+<#Cooked-Porkchop> a schema:Item ;
+	schema:name "Cooked Porkchop" .
+
+<#Steak> a schema:Item ;
+	schema:name "Steak" .
+
+<#Cooked-Fish> a schema:Item ;
+	schema:name "Cooked Fish" .
+
+<#Baked-Potato> a schema:Item ;
+	schema:name "Baked Potato" .
+
+<#Charcoal> a schema:Item ;
+	schema:name "Charcoal" .
+
+<#Cactus-Green> a schema:Item ;
+	schema:name "Cactus Green" .
+
+<#Raw-Chicken> a schema:Item ;
+	schema:name "Raw Chicken" .
+
+<#Fuel> a schema:Item ;
+	schema:name "Fuel" .
+
+<#Raw-Porkchop> a schema:Item ;
+	schema:name "Raw Porkchop" .
+
+<#Raw-Beef> a schema:Item ;
+	schema:name "Raw Beef" .
+
+<#Raw-Fish> a schema:Item ;
+	schema:name "Raw Fish" .
+
+<#Potato> a schema:Item ;
+	schema:name "Potato" .
+
+<#Iron-Ore> a schema:Item ;
+	schema:name "Iron Ore" .
+
+<#Gold-Ore> a schema:Item ;
+	schema:name "Gold Ore" .
+
+<#Clay> a schema:Item ;
+	schema:name "Clay" .
+
+<#Netherrack> a schema:Item ;
+	schema:name "Netherrack" .
+
+<#Cactu> a schema:Item ;
+	schema:name "Cactu" .

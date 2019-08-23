@@ -1,0 +1,1058 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+<#Wooden+Plank> a schema:recipe ;
+	<#%23finalProduct> "Wooden Plank" .
+
+<#Wood> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Wooden+Plank> schema:ingredients <#Wood> .
+
+<#Stick> a schema:recipe ;
+	<#%23finalProduct> "Stick" .
+
+<#Wooden+Plank> a schema:Item ;
+	<#%23quantity> "2" .
+
+<#Stick> schema:ingredients <#Wooden+Plank> .
+
+<#Torch> a schema:recipe ;
+	<#%23finalProduct> "Torch" .
+
+<#Stick> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Torch> schema:ingredients <#Stick> .
+
+<#Coal> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Torch> schema:ingredients <#Coal> .
+
+<#Crafting+Table> a schema:recipe ;
+	<#%23finalProduct> "Crafting Table" .
+
+<#Wooden+Plank> <#%23quantity> "4" .
+
+<#Crafting+Table> schema:ingredients <#Wooden+Plank> .
+
+<#Furnace> a schema:recipe ;
+	<#%23finalProduct> "Furnace" .
+
+<#Cobblestone> a schema:Item ;
+	<#%23quantity> "8" .
+
+<#Furnace> schema:ingredients <#Cobblestone> .
+
+<#Chest> a schema:recipe ;
+	<#%23finalProduct> "Chest" .
+
+<#Wooden+Plank> <#%23quantity> "8" .
+
+<#Chest> schema:ingredients <#Wooden+Plank> .
+
+<#Wood+Pickaxe> a schema:recipe ;
+	<#%23finalProduct> "Wood Pickaxe" .
+
+<#Stick> <#%23quantity> "2" .
+
+<#Wood+Pickaxe> schema:ingredients <#Stick> .
+
+<#Wooden+Plank> <#%23quantity> "3" .
+
+<#Wood+Pickaxe> schema:ingredients <#Wooden+Plank> .
+
+<#Stone+Pickaxe> a schema:recipe ;
+	<#%23finalProduct> "Stone Pickaxe" ;
+	schema:ingredients <#Stick> .
+
+<#Stone+Block> a schema:Item ;
+	<#%23quantity> "3" .
+
+<#Stone+Pickaxe> schema:ingredients <#Stone+Block> .
+
+<#Iron+Pickaxe> a schema:recipe ;
+	<#%23finalProduct> "Iron Pickaxe" ;
+	schema:ingredients <#Stick> .
+
+<#Iron+Ingot> a schema:Item ;
+	<#%23quantity> "3" .
+
+<#Iron+Pickaxe> schema:ingredients <#Iron+Ingot> .
+
+<#Gold+Pickaxe> a schema:recipe ;
+	<#%23finalProduct> "Gold Pickaxe" ;
+	schema:ingredients <#Stick> .
+
+<#Gold+Ingot> a schema:Item ;
+	<#%23quantity> "3" .
+
+<#Gold+Pickaxe> schema:ingredients <#Gold+Ingot> .
+
+<#Diamond+Pickaxe> a schema:recipe ;
+	<#%23finalProduct> "Diamond Pickaxe" ;
+	schema:ingredients <#Stick> .
+
+<#Diamond> a schema:Item ;
+	<#%23quantity> "3" .
+
+<#Diamond+Pickaxe> schema:ingredients <#Diamond> .
+
+<#Wood+Shovel> a schema:recipe ;
+	<#%23finalProduct> "Wood Shovel" ;
+	schema:ingredients <#Stick> .
+
+<#Wooden+Plank> <#%23quantity> "1" .
+
+<#Wood+Shovel> schema:ingredients <#Wooden+Plank> .
+
+<#Stone+Shovel> a schema:recipe ;
+	<#%23finalProduct> "Stone Shovel" ;
+	schema:ingredients <#Stick> .
+
+<#Stone+Block> <#%23quantity> "1" .
+
+<#Stone+Shovel> schema:ingredients <#Stone+Block> .
+
+<#Iron+Shovel> a schema:recipe ;
+	<#%23finalProduct> "Iron Shovel" ;
+	schema:ingredients <#Stick> .
+
+<#Iron+Ingot> <#%23quantity> "1" .
+
+<#Iron+Shovel> schema:ingredients <#Iron+Ingot> .
+
+<#Gold+Shovel> a schema:recipe ;
+	<#%23finalProduct> "Gold Shovel" ;
+	schema:ingredients <#Stick> .
+
+<#Gold+Ingot> <#%23quantity> "1" .
+
+<#Gold+Shovel> schema:ingredients <#Gold+Ingot> .
+
+<#Diamond+Shovel> a schema:recipe ;
+	<#%23finalProduct> "Diamond Shovel" ;
+	schema:ingredients <#Stick> .
+
+<#Diamond> <#%23quantity> "1" .
+
+<#Diamond+Shovel> schema:ingredients <#Diamond> .
+
+<#Wood+Axe> a schema:recipe ;
+	<#%23finalProduct> "Wood Axe" ;
+	schema:ingredients <#Stick> , <#Wooden+Plank> .
+
+<#Stone+Axe> a schema:recipe ;
+	<#%23finalProduct> "Stone Axe" ;
+	schema:ingredients <#Stick> , <#Stone+Block> .
+
+<#Iron+Axe> a schema:recipe ;
+	<#%23finalProduct> "Iron Axe" ;
+	schema:ingredients <#Stick> , <#Iron+Ingot> .
+
+<#Gold+Axe> a schema:recipe ;
+	<#%23finalProduct> "Gold Axe" ;
+	schema:ingredients <#Stick> , <#Gold+Ingot> .
+
+<#Diamond+Axe> a schema:recipe ;
+	<#%23finalProduct> "Diamond Axe" ;
+	schema:ingredients <#Stick> , <#Diamond> .
+
+<#Wood+Hoe> a schema:recipe ;
+	<#%23finalProduct> "Wood Hoe" ;
+	schema:ingredients <#Stick> , <#Wooden+Plank> .
+
+<#Stone+Hoe> a schema:recipe ;
+	<#%23finalProduct> "Stone Hoe" ;
+	schema:ingredients <#Stick> .
+
+<#Stone+Block> <#%23quantity> "2" .
+
+<#Stone+Hoe> schema:ingredients <#Stone+Block> .
+
+<#Iron+Hoe> a schema:recipe ;
+	<#%23finalProduct> "Iron Hoe" ;
+	schema:ingredients <#Stick> .
+
+<#Iron+Ingot> <#%23quantity> "2" .
+
+<#Iron+Hoe> schema:ingredients <#Iron+Ingot> .
+
+<#Gold+Hoe> a schema:recipe ;
+	<#%23finalProduct> "Gold Hoe" ;
+	schema:ingredients <#Stick> .
+
+<#Gold+Ingot> <#%23quantity> "2" .
+
+<#Gold+Hoe> schema:ingredients <#Gold+Ingot> .
+
+<#Diamond+Hoe> a schema:recipe ;
+	<#%23finalProduct> "Diamond Hoe" ;
+	schema:ingredients <#Stick> .
+
+<#Diamond> <#%23quantity> "2" .
+
+<#Diamond+Hoe> schema:ingredients <#Diamond> .
+
+<#Bucket> a schema:recipe ;
+	<#%23finalProduct> "Bucket" ;
+	schema:ingredients <#Iron+Ingot> .
+
+<#Flint+and+Steel> a schema:recipe ;
+	<#%23finalProduct> "Flint and Steel" ;
+	schema:ingredients <#Iron+Ingot> .
+
+<#Flint> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Flint+and+Steel> schema:ingredients <#Flint> .
+
+<#Fire+Charge> a schema:recipe ;
+	<#%23finalProduct> "Fire Charge" .
+
+<#Blaze+Powder> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Fire+Charge> schema:ingredients <#Blaze+Powder> , <#Coal> .
+
+<#Gunpowder> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Fire+Charge> schema:ingredients <#Gunpowder> .
+
+<#Fishing+Rod> a schema:recipe ;
+	<#%23finalProduct> "Fishing Rod" .
+
+<#Stick> <#%23quantity> "3" .
+
+<#Fishing+Rod> schema:ingredients <#Stick> .
+
+<#String> a schema:Item ;
+	<#%23quantity> "2" .
+
+<#Fishing+Rod> schema:ingredients <#String> .
+
+<#Carrot+on+a+Stick> a schema:recipe ;
+	<#%23finalProduct> "Carrot on a Stick" .
+
+<#Fishing+Rod> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Carrot+on+a+Stick> schema:ingredients <#Fishing+Rod> .
+
+<#Carrot> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Carrot+on+a+Stick> schema:ingredients <#Carrot> .
+
+<#Compass> a schema:recipe ;
+	<#%23finalProduct> "Compass" .
+
+<#Iron+Ingot> <#%23quantity> "4" .
+
+<#Compass> schema:ingredients <#Iron+Ingot> .
+
+<#Redstone+Dust> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Compass> schema:ingredients <#Redstone+Dust> .
+
+<#Clock> a schema:recipe ;
+	<#%23finalProduct> "Clock" .
+
+<#Gold+Ingot> <#%23quantity> "4" .
+
+<#Clock> schema:ingredients <#Gold+Ingot> , <#Redstone+Dust> .
+
+<#Map> a schema:recipe ;
+	<#%23finalProduct> "Map" .
+
+<#Paper> a schema:Item ;
+	<#%23quantity> "8" .
+
+<#Map> schema:ingredients <#Paper> .
+
+<#Compass> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Map> schema:ingredients <#Compass> .
+
+<#Shear> a schema:recipe ;
+	<#%23finalProduct> "Shear" ;
+	schema:ingredients <#Iron+Ingot> .
+
+<#Wood+Sword> a schema:recipe ;
+	<#%23finalProduct> "Wood Sword" ;
+	schema:ingredients <#Stick> , <#Wooden+Plank> .
+
+<#Stone+Sword> a schema:recipe ;
+	<#%23finalProduct> "Stone Sword" ;
+	schema:ingredients <#Stick> , <#Stone+Block> .
+
+<#Iron+Sword> a schema:recipe ;
+	<#%23finalProduct> "Iron Sword" ;
+	schema:ingredients <#Stick> , <#Iron+Ingot> .
+
+<#Gold+Sword> a schema:recipe ;
+	<#%23finalProduct> "Gold Sword" ;
+	schema:ingredients <#Stick> , <#Gold+Ingot> .
+
+<#Diamond+Sword> a schema:recipe ;
+	<#%23finalProduct> "Diamond Sword" ;
+	schema:ingredients <#Stick> , <#Diamond> .
+
+<#Bow> a schema:recipe ;
+	<#%23finalProduct> "Bow" ;
+	schema:ingredients <#Stick> .
+
+<#String> <#%23quantity> "3" .
+
+<#Bow> schema:ingredients <#String> .
+
+<#Arrow> a schema:recipe ;
+	<#%23finalProduct> "Arrow" ;
+	schema:ingredients <#Flint> , <#Stick> .
+
+<#Feather> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Arrow> schema:ingredients <#Feather> .
+
+<#Leather+Helmet> a schema:recipe ;
+	<#%23finalProduct> "Leather Helmet" .
+
+<#Leather> a schema:Item ;
+	<#%23quantity> "5" .
+
+<#Leather+Helmet> schema:ingredients <#Leather> .
+
+<#Iron+Helmet> a schema:recipe ;
+	<#%23finalProduct> "Iron Helmet" .
+
+<#Iron+Ingot> <#%23quantity> "5" .
+
+<#Iron+Helmet> schema:ingredients <#Iron+Ingot> .
+
+<#Gold+Helmet> a schema:recipe ;
+	<#%23finalProduct> "Gold Helmet" .
+
+<#Gold+Ingot> <#%23quantity> "5" .
+
+<#Gold+Helmet> schema:ingredients <#Gold+Ingot> .
+
+<#Diamond+Helmet> a schema:recipe ;
+	<#%23finalProduct> "Diamond Helmet" .
+
+<#Diamond> <#%23quantity> "5" .
+
+<#Diamond+Helmet> schema:ingredients <#Diamond> .
+
+<#Leather+Chestplate> a schema:recipe ;
+	<#%23finalProduct> "Leather Chestplate" .
+
+<#Leather> <#%23quantity> "8" .
+
+<#Leather+Chestplate> schema:ingredients <#Leather> .
+
+<#Iron+Chestplate> a schema:recipe ;
+	<#%23finalProduct> "Iron Chestplate" .
+
+<#Iron+Ingot> <#%23quantity> "8" .
+
+<#Iron+Chestplate> schema:ingredients <#Iron+Ingot> .
+
+<#Gold+Chestplate> a schema:recipe ;
+	<#%23finalProduct> "Gold Chestplate" .
+
+<#Gold+Ingot> <#%23quantity> "8" .
+
+<#Gold+Chestplate> schema:ingredients <#Gold+Ingot> .
+
+<#Diamond+Chestplate> a schema:recipe ;
+	<#%23finalProduct> "Diamond Chestplate" .
+
+<#Diamond> <#%23quantity> "8" .
+
+<#Diamond+Chestplate> schema:ingredients <#Diamond> .
+
+<#Leather+Legging> a schema:recipe ;
+	<#%23finalProduct> "Leather Legging" .
+
+<#Leather> <#%23quantity> "7" .
+
+<#Leather+Legging> schema:ingredients <#Leather> .
+
+<#Iron+Legging> a schema:recipe ;
+	<#%23finalProduct> "Iron Legging" .
+
+<#Iron+Ingot> <#%23quantity> "7" .
+
+<#Iron+Legging> schema:ingredients <#Iron+Ingot> .
+
+<#Gold+Legging> a schema:recipe ;
+	<#%23finalProduct> "Gold Legging" .
+
+<#Gold+Ingot> <#%23quantity> "7" .
+
+<#Gold+Legging> schema:ingredients <#Gold+Ingot> .
+
+<#Diamond+Legging> a schema:recipe ;
+	<#%23finalProduct> "Diamond Legging" .
+
+<#Diamond> <#%23quantity> "7" .
+
+<#Diamond+Legging> schema:ingredients <#Diamond> .
+
+<#Leather+Boot> a schema:recipe ;
+	<#%23finalProduct> "Leather Boot" .
+
+<#Leather> <#%23quantity> "4" .
+
+<#Leather+Boot> schema:ingredients <#Leather> .
+
+<#Iron+Boot> a schema:recipe ;
+	<#%23finalProduct> "Iron Boot" ;
+	schema:ingredients <#Iron+Ingot> .
+
+<#Gold+Boot> a schema:recipe ;
+	<#%23finalProduct> "Gold Boot" ;
+	schema:ingredients <#Gold+Ingot> .
+
+<#Diamond+Boot> a schema:recipe ;
+	<#%23finalProduct> "Diamond Boot" .
+
+<#Diamond> <#%23quantity> "4" .
+
+<#Diamond+Boot> schema:ingredients <#Diamond> .
+
+<#Iron+Block> a schema:recipe ;
+	<#%23finalProduct> "Iron Block" .
+
+<#Iron+Ingot> <#%23quantity> "9" .
+
+<#Iron+Block> schema:ingredients <#Iron+Ingot> .
+
+<#Gold+Block> a schema:recipe ;
+	<#%23finalProduct> "Gold Block" .
+
+<#Gold+Ingot> <#%23quantity> "9" .
+
+<#Gold+Block> schema:ingredients <#Gold+Ingot> .
+
+<#Diamond+Block> a schema:recipe ;
+	<#%23finalProduct> "Diamond Block" .
+
+<#Diamond> <#%23quantity> "9" .
+
+<#Diamond+Block> schema:ingredients <#Diamond> .
+
+<#Emerald+Block> a schema:recipe ;
+	<#%23finalProduct> "Emerald Block" .
+
+<#Emerald> a schema:Item ;
+	<#%23quantity> "9" .
+
+<#Emerald+Block> schema:ingredients <#Emerald> .
+
+<#Lapis+Lazuli+block> a schema:recipe ;
+	<#%23finalProduct> "Lapis Lazuli block" .
+
+<#Lapis+Lazuli> a schema:Item ;
+	<#%23quantity> "9" .
+
+<#Lapis+Lazuli+block> schema:ingredients <#Lapis+Lazuli> .
+
+<#Glowstone> a schema:recipe ;
+	<#%23finalProduct> "Glowstone" .
+
+<#Glowstone+Dust> a schema:Item ;
+	<#%23quantity> "4" .
+
+<#Glowstone> schema:ingredients <#Glowstone+Dust> .
+
+<#Clay+Block> a schema:recipe ;
+	<#%23finalProduct> "Clay Block" .
+
+<#Clay+Ball> a schema:Item ;
+	<#%23quantity> "4" .
+
+<#Clay+Block> schema:ingredients <#Clay+Ball> .
+
+<#Brick> a schema:recipe ;
+	<#%23finalProduct> "Brick" .
+
+<#Clay+Brick> a schema:Item ;
+	<#%23quantity> "4" .
+
+<#Brick> schema:ingredients <#Clay+Brick> .
+
+<#Stone+Brick> a schema:recipe ;
+	<#%23finalProduct> "Stone Brick" .
+
+<#Stone+Block> <#%23quantity> "4" .
+
+<#Stone+Brick> schema:ingredients <#Stone+Block> .
+
+<#Sandstone> a schema:recipe ;
+	<#%23finalProduct> "Sandstone" .
+
+<#Sand> a schema:Item ;
+	<#%23quantity> "4" .
+
+<#Sandstone> schema:ingredients <#Sand> .
+
+<#Smooth+Sandstone> a schema:recipe ;
+	<#%23finalProduct> "Smooth Sandstone" .
+
+<#Sandstone> a schema:Item ;
+	<#%23quantity> "4" .
+
+<#Smooth+Sandstone> schema:ingredients <#Sandstone> .
+
+<#Decorative+Sandstone> a schema:recipe ;
+	<#%23finalProduct> "Decorative Sandstone" .
+
+<#Sandstone+Slab> a schema:Item ;
+	<#%23quantity> "2" .
+
+<#Decorative+Sandstone> schema:ingredients <#Sandstone+Slab> .
+
+<#Snow+Block> a schema:recipe ;
+	<#%23finalProduct> "Snow Block" .
+
+<#Snowball> a schema:Item ;
+	<#%23quantity> "4" .
+
+<#Snow+Block> schema:ingredients <#Snowball> .
+
+<#Wool+Block> a schema:recipe ;
+	<#%23finalProduct> "Wool Block" .
+
+<#String> <#%23quantity> "4" .
+
+<#Wool+Block> schema:ingredients <#String> .
+
+<#Wooden+Slab> a schema:recipe ;
+	<#%23finalProduct> "Wooden Slab" .
+
+<#Wooden+Plank> <#%23quantity> "6" .
+
+<#Wooden+Slab> schema:ingredients <#Wooden+Plank> .
+
+<#Stone+Slab> a schema:recipe ;
+	<#%23finalProduct> "Stone Slab" .
+
+<#Stone> a schema:Item ;
+	<#%23quantity> "3" .
+
+<#Stone+Slab> schema:ingredients <#Stone> .
+
+<#Sandstone+Slab> a schema:recipe ;
+	<#%23finalProduct> "Sandstone Slab" .
+
+<#Sandstone> <#%23quantity> "3" .
+
+<#Sandstone+Slab> schema:ingredients <#Sandstone> .
+
+<#Stone+Brick+Slab> a schema:recipe ;
+	<#%23finalProduct> "Stone Brick Slab" .
+
+<#Stone+Brick> a schema:Item ;
+	<#%23quantity> "3" .
+
+<#Stone+Brick+Slab> schema:ingredients <#Stone+Brick> .
+
+<#Brick+Slab> a schema:recipe ;
+	<#%23finalProduct> "Brick Slab" .
+
+<#Brick> a schema:Item ;
+	<#%23quantity> "3" .
+
+<#Brick+Slab> schema:ingredients <#Brick> .
+
+<#Cobblestone+Slab> a schema:recipe ;
+	<#%23finalProduct> "Cobblestone Slab" .
+
+<#Cobblestone> <#%23quantity> "3" .
+
+<#Cobblestone+Slab> schema:ingredients <#Cobblestone> .
+
+<#Wood+Stair> a schema:recipe ;
+	<#%23finalProduct> "Wood Stair" ;
+	schema:ingredients <#Wooden+Plank> .
+
+<#Cobblestone+Stair> a schema:recipe ;
+	<#%23finalProduct> "Cobblestone Stair" .
+
+<#Cobblestone> <#%23quantity> "6" .
+
+<#Cobblestone+Stair> schema:ingredients <#Cobblestone> .
+
+<#Wood+Door> a schema:recipe ;
+	<#%23finalProduct> "Wood Door" ;
+	schema:ingredients <#Wooden+Plank> .
+
+<#Iron+Door> a schema:recipe ;
+	<#%23finalProduct> "Iron Door" .
+
+<#Iron+Ingot> <#%23quantity> "6" .
+
+<#Iron+Door> schema:ingredients <#Iron+Ingot> .
+
+<#Trapdoor> a schema:recipe ;
+	<#%23finalProduct> "Trapdoor" ;
+	schema:ingredients <#Wooden+Plank> .
+
+<#Ladder> a schema:recipe ;
+	<#%23finalProduct> "Ladder" .
+
+<#Stick> <#%23quantity> "7" .
+
+<#Ladder> schema:ingredients <#Stick> .
+
+<#Fence> a schema:recipe ;
+	<#%23finalProduct> "Fence" .
+
+<#Stick> <#%23quantity> "6" .
+
+<#Fence> schema:ingredients <#Stick> .
+
+<#Fence+Gate> a schema:recipe ;
+	<#%23finalProduct> "Fence Gate" .
+
+<#Stick> <#%23quantity> "4" .
+
+<#Fence+Gate> schema:ingredients <#Stick> .
+
+<#Wooden+Slab> a schema:Item ;
+	<#%23quantity> "2" .
+
+<#Fence+Gate> schema:ingredients <#Wooden+Slab> .
+
+<#Nether+Brick+Fence> a schema:recipe ;
+	<#%23finalProduct> "Nether Brick Fence" .
+
+<#Nether+Brick> a schema:Item ;
+	<#%23quantity> "6" .
+
+<#Nether+Brick+Fence> schema:ingredients <#Nether+Brick> .
+
+<#Cobblestone+Wall> a schema:recipe ;
+	<#%23finalProduct> "Cobblestone Wall" ;
+	schema:ingredients <#Cobblestone> .
+
+<#Mossy+Cobblestone+Wall> a schema:recipe ;
+	<#%23finalProduct> "Mossy Cobblestone Wall" .
+
+<#Mossy+Cobblestone> a schema:Item ;
+	<#%23quantity> "6" .
+
+<#Mossy+Cobblestone+Wall> schema:ingredients <#Mossy+Cobblestone> .
+
+<#Iron+Bar> a schema:recipe ;
+	<#%23finalProduct> "Iron Bar" ;
+	schema:ingredients <#Iron+Ingot> .
+
+<#Glass+Pane> a schema:recipe ;
+	<#%23finalProduct> "Glass Pane" .
+
+<#Glass> a schema:Item ;
+	<#%23quantity> "6" .
+
+<#Glass+Pane> schema:ingredients <#Glass> .
+
+<#Bread> a schema:recipe ;
+	<#%23finalProduct> "Bread" .
+
+<#Wheat> a schema:Item ;
+	<#%23quantity> "3" .
+
+<#Bread> schema:ingredients <#Wheat> .
+
+<#Mushroom+Stew> a schema:recipe ;
+	<#%23finalProduct> "Mushroom Stew" .
+
+<#Red+Mushroom> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Mushroom+Stew> schema:ingredients <#Red+Mushroom> .
+
+<#Brown+Mushroom> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Mushroom+Stew> schema:ingredients <#Brown+Mushroom> .
+
+<#Bowl> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Mushroom+Stew> schema:ingredients <#Bowl> .
+
+<#Cake> a schema:recipe ;
+	<#%23finalProduct> "Cake" .
+
+<#Milk> a schema:Item ;
+	<#%23quantity> "3" .
+
+<#Cake> schema:ingredients <#Milk> .
+
+<#Sugar> a schema:Item ;
+	<#%23quantity> "2" .
+
+<#Cake> schema:ingredients <#Sugar> .
+
+<#Egg> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Cake> schema:ingredients <#Egg> , <#Wheat> .
+
+<#Cookie> a schema:recipe ;
+	<#%23finalProduct> "Cookie" .
+
+<#Wheat> <#%23quantity> "2" .
+
+<#Cookie> schema:ingredients <#Wheat> .
+
+<#Cocoa+Bean> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Cookie> schema:ingredients <#Cocoa+Bean> .
+
+<#Pumpkin+Pie> a schema:recipe ;
+	<#%23finalProduct> "Pumpkin Pie" .
+
+<#Pumpkin> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Pumpkin+Pie> schema:ingredients <#Pumpkin> .
+
+<#Sugar> <#%23quantity> "1" .
+
+<#Pumpkin+Pie> schema:ingredients <#Sugar> , <#Egg> .
+
+<#Golden+Carrot> a schema:recipe ;
+	<#%23finalProduct> "Golden Carrot" .
+
+<#Gold+Nugget> a schema:Item ;
+	<#%23quantity> "8" .
+
+<#Golden+Carrot> schema:ingredients <#Gold+Nugget> , <#Carrot> .
+
+<#Golden+Apple> a schema:recipe ;
+	<#%23finalProduct> "Golden Apple" ;
+	schema:ingredients <#Gold+Nugget> .
+
+<#Apple> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Golden+Apple> schema:ingredients <#Apple> .
+
+<#Enchanted+Golden+Apple> a schema:recipe ;
+	<#%23finalProduct> "Enchanted Golden Apple" .
+
+<#Gold+Block> a schema:Item ;
+	<#%23quantity> "8" .
+
+<#Enchanted+Golden+Apple> schema:ingredients <#Gold+Block> , <#Apple> .
+
+<#Melon> a schema:recipe ;
+	<#%23finalProduct> "Melon" .
+
+<#Melon+Slice> a schema:Item ;
+	<#%23quantity> "9" .
+
+<#Melon> schema:ingredients <#Melon+Slice> .
+
+<#Paper> a schema:recipe ;
+	<#%23finalProduct> "Paper" .
+
+<#Sugar+Cane> a schema:Item ;
+	<#%23quantity> "3" .
+
+<#Paper> schema:ingredients <#Sugar+Cane> .
+
+<#Book> a schema:recipe ;
+	<#%23finalProduct> "Book" .
+
+<#Paper> <#%23quantity> "3" .
+
+<#Book> schema:ingredients <#Paper> .
+
+<#Leather> <#%23quantity> "1" .
+
+<#Book> schema:ingredients <#Leather> .
+
+<#Book+and+Quill> a schema:recipe ;
+	<#%23finalProduct> "Book and Quill" .
+
+<#Book> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Book+and+Quill> schema:ingredients <#Book> , <#Feather> .
+
+<#Ink+Sac> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Book+and+Quill> schema:ingredients <#Ink+Sac> .
+
+<#Sign> a schema:recipe ;
+	<#%23finalProduct> "Sign" ;
+	schema:ingredients <#Wooden+Plank> , <#Stick> .
+
+<#Painting> a schema:recipe ;
+	<#%23finalProduct> "Painting" .
+
+<#Stick> <#%23quantity> "8" .
+
+<#Painting> schema:ingredients <#Stick> .
+
+<#Wool> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Painting> schema:ingredients <#Wool> .
+
+<#Item+Frame> a schema:recipe ;
+	<#%23finalProduct> "Item Frame" ;
+	schema:ingredients <#Stick> , <#Leather> .
+
+<#Flower+Pot> a schema:recipe ;
+	<#%23finalProduct> "Flower Pot" ;
+	schema:ingredients <#Brick> .
+
+<#Bowl> a schema:recipe ;
+	<#%23finalProduct> "Bowl" ;
+	schema:ingredients <#Wooden+Plank> .
+
+<#Sugar> a schema:recipe ;
+	<#%23finalProduct> "Sugar" .
+
+<#Sugar+Cane> <#%23quantity> "1" .
+
+<#Sugar> schema:ingredients <#Sugar+Cane> .
+
+<#Pumpkin+Seed> a schema:recipe ;
+	<#%23finalProduct> "Pumpkin Seed" ;
+	schema:ingredients <#Pumpkin> .
+
+<#Melon+Seed> a schema:recipe ;
+	<#%23finalProduct> "Melon Seed" .
+
+<#Melon+Slice> <#%23quantity> "1" .
+
+<#Melon+Seed> schema:ingredients <#Melon+Slice> .
+
+<#Glistening+Melon> a schema:recipe ;
+	<#%23finalProduct> "Glistening Melon" ;
+	schema:ingredients <#Melon+Slice> .
+
+<#Gold+Nugget> <#%23quantity> "1" .
+
+<#Glistening+Melon> schema:ingredients <#Gold+Nugget> .
+
+<#Gold+Ingot> a schema:recipe ;
+	<#%23finalProduct> "Gold Ingot" .
+
+<#Gold+Nugget> <#%23quantity> "9" .
+
+<#Gold+Ingot> schema:ingredients <#Gold+Nugget> .
+
+<#Bed> a schema:recipe ;
+	<#%23finalProduct> "Bed" .
+
+<#Wool> <#%23quantity> "3" .
+
+<#Bed> schema:ingredients <#Wool> , <#Wooden+Plank> .
+
+<#Beacon> a schema:recipe ;
+	<#%23finalProduct> "Beacon" .
+
+<#Glass> <#%23quantity> "5" .
+
+<#Beacon> schema:ingredients <#Glass> .
+
+<#Nether+Star> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Beacon> schema:ingredients <#Nether+Star> .
+
+<#Obsidian> a schema:Item ;
+	<#%23quantity> "3" .
+
+<#Beacon> schema:ingredients <#Obsidian> .
+
+<#Cauldron> a schema:recipe ;
+	<#%23finalProduct> "Cauldron" ;
+	schema:ingredients <#Iron+Ingot> .
+
+<#Enchantment+Table> a schema:recipe ;
+	<#%23finalProduct> "Enchantment Table" ;
+	schema:ingredients <#Book> , <#Diamond> .
+
+<#Obsidian> <#%23quantity> "4" .
+
+<#Enchantment+Table> schema:ingredients <#Obsidian> .
+
+<#Ender+Chest> a schema:recipe ;
+	<#%23finalProduct> "Ender Chest" .
+
+<#Obsidian> <#%23quantity> "8" .
+
+<#Ender+Chest> schema:ingredients <#Obsidian> .
+
+<#Eye+Of+Ender> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Ender+Chest> schema:ingredients <#Eye+Of+Ender> .
+
+<#Anvil> a schema:recipe ;
+	<#%23finalProduct> "Anvil" .
+
+<#Iron+Block> a schema:Item ;
+	<#%23quantity> "3" .
+
+<#Anvil> schema:ingredients <#Iron+Block> , <#Iron+Ingot> .
+
+<#Blaze+Powder> a schema:recipe ;
+	<#%23finalProduct> "Blaze Powder" .
+
+<#Blaze+Rod> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Blaze+Powder> schema:ingredients <#Blaze+Rod> .
+
+<#Brewing+Stand> a schema:recipe ;
+	<#%23finalProduct> "Brewing Stand" ;
+	schema:ingredients <#Blaze+Rod> , <#Cobblestone> .
+
+<#Eye+of+Ender> a schema:recipe ;
+	<#%23finalProduct> "Eye of Ender" ;
+	schema:ingredients <#Blaze+Powder> .
+
+<#Ender+Pearl> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Eye+of+Ender> schema:ingredients <#Ender+Pearl> .
+
+<#Fermented+Spider+Eye> a schema:recipe ;
+	<#%23finalProduct> "Fermented Spider Eye" .
+
+<#Spider+Eye> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Fermented+Spider+Eye> schema:ingredients <#Spider+Eye> , <#Brown+Mushroom> , <#Sugar> .
+
+<#Bottle> a schema:recipe ;
+	<#%23finalProduct> "Bottle" .
+
+<#Glass> <#%23quantity> "3" .
+
+<#Bottle> schema:ingredients <#Glass> .
+
+<#Magma+Cream> a schema:recipe ;
+	<#%23finalProduct> "Magma Cream" .
+
+<#Slime+Ball> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Magma+Cream> schema:ingredients <#Slime+Ball> , <#Blaze+Powder> .
+
+<#Cooked+Chicken> a schema:recipe ;
+	<#%23finalProduct> "Cooked Chicken" .
+
+<#Raw+Chicken> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Cooked+Chicken> schema:ingredients <#Raw+Chicken> .
+
+<#Fuel> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Cooked+Chicken> schema:ingredients <#Fuel> .
+
+<#Cooked+Porkchop> a schema:recipe ;
+	<#%23finalProduct> "Cooked Porkchop" .
+
+<#Raw+Porkchop> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Cooked+Porkchop> schema:ingredients <#Raw+Porkchop> , <#Fuel> .
+
+<#Steak> a schema:recipe ;
+	<#%23finalProduct> "Steak" .
+
+<#Raw+Beef> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Steak> schema:ingredients <#Raw+Beef> , <#Fuel> .
+
+<#Cooked+Fish> a schema:recipe ;
+	<#%23finalProduct> "Cooked Fish" .
+
+<#Raw+Fish> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Cooked+Fish> schema:ingredients <#Raw+Fish> , <#Fuel> .
+
+<#Baked+Potato> a schema:recipe ;
+	<#%23finalProduct> "Baked Potato" .
+
+<#Potato> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Baked+Potato> schema:ingredients <#Potato> , <#Fuel> .
+
+<#Charcoal> a schema:recipe ;
+	<#%23finalProduct> "Charcoal" ;
+	schema:ingredients <#Wood> , <#Fuel> .
+
+<#Iron+Ingot> a schema:recipe ;
+	<#%23finalProduct> "Iron Ingot" .
+
+<#Iron+Ore> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Iron+Ingot> schema:ingredients <#Iron+Ore> , <#Fuel> .
+
+<#Gold+Ore> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Gold+Ingot> schema:ingredients <#Gold+Ore> , <#Fuel> .
+
+<#Glass> a schema:recipe ;
+	<#%23finalProduct> "Glass" .
+
+<#Sand> <#%23quantity> "1" .
+
+<#Glass> schema:ingredients <#Sand> , <#Fuel> .
+
+<#Stone> a schema:recipe ;
+	<#%23finalProduct> "Stone" .
+
+<#Cobblestone> <#%23quantity> "1" .
+
+<#Stone> schema:ingredients <#Cobblestone> , <#Fuel> .
+
+<#Clay> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Brick> schema:ingredients <#Clay> , <#Fuel> .
+
+<#Nether+Brick> a schema:recipe ;
+	<#%23finalProduct> "Nether Brick" .
+
+<#Netherrack> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Nether+Brick> schema:ingredients <#Netherrack> , <#Fuel> .
+
+<#Cactus+Green> a schema:recipe ;
+	<#%23finalProduct> "Cactus Green" .
+
+<#Cactu> a schema:Item ;
+	<#%23quantity> "1" .
+
+<#Cactus+Green> schema:ingredients <#Cactu> , <#Fuel> .
